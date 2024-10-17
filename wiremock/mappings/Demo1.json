@@ -1,0 +1,23 @@
+{
+	"request": {
+		"method": "GET",
+		"url": "/employee"
+		},
+	"response": {
+		"status": 200,
+		"jsonBody": {
+			"name":"sushanth",
+			"addl1":"1123",
+			"addl2":"Guindy",
+			"district":"Chennai",
+			"city":"chennai",
+			"state":"TamilNadu",
+			"country":"India"
+			},
+		"headers":{
+		     "content-Type":"text/plain"
+	}
+	}
+}
+
+

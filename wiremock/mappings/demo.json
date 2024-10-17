@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/wiremock"
+  },
+
+  "response": {
+    "status": 200,
+    "body": "wiremock API Testing",
+    "headers":{
+         "Content-Type":"text/plain"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+	"request": {
+		"method": "GET",
+		"url": "/applicatinmaster/applications"
+	},
+	"response": {
+		"status": 200,
+		"jsonBody": [
+			{
+				"appid": 1,
+				"appname": "CSV",
+				"profiles": [
+					{
+						"profid": 1,
+						"appid": 1,
+						"profname": "CSV_Validation",
+						"description": "Shipment Validation in CSV",
+						"createdid": 856475,
+						"createddate": "2023-10-05",
+						"modifiedid": "5664578",
+						"modifiedtime": "2023-10-05T10:32:36.705+00:00",
+						"notes": "profilecreation",
+						"gitpath": "https://github.com/INET_7",
+						"gitkey": "agdtr$%^$%6789",
+						"lastrun": "2023-10-05T10:32:36.705+00:00",
+						"activeflag": "Y",
+						"testcases": [
+							{
+								"testid": 1,
+								"profid": 1,
+								"identifier": 1234,
+								"testname": "FOIS_Shipment_Creation_1",
+								"description": "shipment creation1",
+								"path": "https://github.com/",
+								"sequencenumber": 8976,
+								"createdid": 675364,
+								"createddate": "2023-10-05",
+								"modifiedid": "758647",
+								"modifiedtime": "2023-10-05T10:32:47.370+00:00",
+								"activeflag": "Y",
+								"runtime": "java",
+								"parameters": [
+									{
+										"paramid": 1,
+										"testid": 1,
+										"paramname": "Consignment creation",
+										"type": "input",
+										"datatype": "string",
+										"sequencenumber": 65632,
+										"createdid": 245567,
+										"defaultvalue": "tracking1",
+										"bulkflag": "N",
+										"valuefrom": "tracking2"
+									},
+									{
+										"paramid": 2,
+										"testid": 1,
+										"paramname": "Dispatch",
+										"type": "output",
+										"datatype": "string",
+										"sequencenumber": 6543652,
+										"createdid": 245567,
+										"defaultvalue": "tracking2",
+										"bulkflag": "Y",
+										"valuefrom": "tracking"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"headers": {
+			"content-Type": "text/plain"
+		}
+	}
+}
+
+

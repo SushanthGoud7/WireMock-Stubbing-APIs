@@ -1,0 +1,32 @@
+{
+	"request": {
+		"urlPattern": "/profilemaster/profiles",
+		"method": "POST",
+		"bodyPatterns": [
+			{
+				"equalToJson": "{ \"applicationid\" : \"1\", \"profname\" : \"CSV_Validation\", \"description\":\"Shipment Validation in CSV\", \"createdid\":\"856475\", \"modifiedid\":\"5664578\", \"notes\":\"profilecreation\", \"gitpath\":\"https://github.com/INET_7\", \"gitkey\":\"sewhr$%^$%6789\", \"activeflag\" : \"Y\" }"
+			}
+		]
+	},
+	"response": {
+		"status": 200,
+		"headers": {
+			"Content-Type": "application/json"
+		},
+		"jsonBody": [
+			{
+				"profid": 1,
+				"appid": 1,
+				"profname": "CSV_Validation",
+				"description": "Shipment Validation in CSV",
+				"createdid": 856475,
+				"modifiedid": "5664578",
+				"notes": "profilecreation",
+				"gitpath": "https://github.com/INET_7",
+				"gitkey": "agdtr$%^$%6789",
+				"activeflag": "Y",
+				"testcases": []
+			}
+		]
+	}
+}
