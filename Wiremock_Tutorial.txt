@@ -1,0 +1,115 @@
+****************************************WIREMOCK*******************************************
+***SAMPLE COMMAND RUNNING:
+---------------------------------
+
+
+
+Microsoft Windows [Version 10.0.19045.3448]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\varni.goud>cd C:\BySelf
+
+C:\BySelf>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 7C58-842E
+
+ Directory of C:\BySelf
+
+10/05/2023  02:23 PM    <DIR>          .
+10/05/2023  02:23 PM    <DIR>          ..
+10/20/2022  11:36 AM    <DIR>          Crewpay Latest
+10/18/2022  11:43 AM    <DIR>          EmployeeDetails-Frontend
+09/30/2022  05:39 PM    <DIR>          Java-Programs
+01/10/2023  05:04 PM             2,614 JobData.zip
+10/18/2022  05:04 PM    <DIR>          microservices POC
+10/21/2022  10:15 AM    <DIR>          RuleEngine
+11/15/2022  03:10 PM             1,689 swagger.txt
+11/08/2022  10:34 AM        35,190,226 Truck-Management-System.zip
+11/09/2022  05:04 PM       161,761,458 TruckManagement.zip
+02/28/2023  03:40 PM    <DIR>          wiremock
+10/05/2023  02:23 PM        17,614,668 wiremock-standalone-3.2.0.jar
+               5 File(s)    214,570,655 bytes
+               8 Dir(s)  318,382,391,296 bytes free
+
+C:\BySelf>java -jar wiremock-standalone-3.2.0.jar
+
+←[34m██     ██ ██ ██████  ███████ ←[33m███    ███  ██████   ██████ ██   ██
+←[34m██     ██ ██ ██   ██ ██      ←[33m████  ████ ██    ██ ██      ██  ██
+←[34m██  █  ██ ██ ██████  █████   ←[33m██ ████ ██ ██    ██ ██      █████
+←[34m██ ███ ██ ██ ██   ██ ██      ←[33m██  ██  ██ ██    ██ ██      ██  ██
+←[34m ███ ███  ██ ██   ██ ███████ ←[33m██      ██  ██████   ██████ ██   ██
+
+←[0m----------------------------------------------------------------
+|               Cloud: https://wiremock.io/cloud               |
+|                                                              |
+|               Slack: https://slack.wiremock.org              |
+----------------------------------------------------------------
+
+port:                         8080
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      false
+
+extensions:                   response-template,webhook
+^C
+C:\BySelf>
+C:\BySelf>
+C:\BySelf>
+C:\BySelf>java -jar wiremock-standalone-3.2.0.jar --port 8087
+java.lang.RuntimeException: java.io.IOException: Failed to bind to /0.0.0.0:8087
+
+C:\BySelf>java -jar wiremock-standalone-3.2.0.jar --port 8088
+
+←[34m██     ██ ██ ██████  ███████ ←[33m███    ███  ██████   ██████ ██   ██
+←[34m██     ██ ██ ██   ██ ██      ←[33m████  ████ ██    ██ ██      ██  ██
+←[34m██  █  ██ ██ ██████  █████   ←[33m██ ████ ██ ██    ██ ██      █████
+←[34m██ ███ ██ ██ ██   ██ ██      ←[33m██  ██  ██ ██    ██ ██      ██  ██
+←[34m ███ ███  ██ ██   ██ ███████ ←[33m██      ██  ██████   ██████ ██   ██
+
+←[0m----------------------------------------------------------------
+|               Cloud: https://wiremock.io/cloud               |
+|                                                              |
+|               Slack: https://slack.wiremock.org              |
+----------------------------------------------------------------
+
+port:                         8088
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      false
+
+extensions:                   response-template,webhook
+^C
+C:\BySelf>java -jar wiremock-standalone-3.2.0.jar --port 8088 --https-port 2727
+
+←[34m██     ██ ██ ██████  ███████ ←[33m███    ███  ██████   ██████ ██   ██
+←[34m██     ██ ██ ██   ██ ██      ←[33m████  ████ ██    ██ ██      ██  ██
+←[34m██  █  ██ ██ ██████  █████   ←[33m██ ████ ██ ██    ██ ██      █████
+←[34m██ ███ ██ ██ ██   ██ ██      ←[33m██  ██  ██ ██    ██ ██      ██  ██
+←[34m ███ ███  ██ ██   ██ ███████ ←[33m██      ██  ██████   ██████ ██   ██
+
+←[0m----------------------------------------------------------------
+|               Cloud: https://wiremock.io/cloud               |
+|                                                              |
+|               Slack: https://slack.wiremock.org              |
+----------------------------------------------------------------
+
+port:                         8088
+https-port:                   2727
+https-keystore:               jar:file:/C:/BySelf/wiremock-standalone-3.2.0.jar!/keystore
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      false
+
+extensions:                   response-template,webhook
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+Default WIREMOCK Url = http://localhost:8080/__admin/ or http://localhost:8080/__admin/mappings/
